@@ -34,7 +34,7 @@ public class ImportOrderDuplications {
         }
 
         for (int i = 1; i <= numberOfOrders; i++) {
-            String referenceNumber = baseReference + String.format("%02d", i);
+            String referenceNumber = baseReference + String.format("%04d", i);
             String newXmlContent = templateXML.replaceAll("<referenceNumber>.*?</referenceNumber>",
                     "<referenceNumber>" + referenceNumber + "</referenceNumber>");
 
