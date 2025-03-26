@@ -44,7 +44,7 @@ public class SFTPOrders {
     }
 
     private static String generateOrderXML(String referenceNumber) {
-        return "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+    	return "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
                 "<Orders>\n" +
                 "  <Order>\n" +
                 "    <referenceNumber>" + referenceNumber + "</referenceNumber>\n" +
@@ -55,16 +55,83 @@ public class SFTPOrders {
                 "    <firstName>Sujit</firstName>\n" +
                 "    <lastName>Srinivasan</lastName>\n" +
                 "    <addressLine1>123 High Street</addressLine1>\n" +
+                "    <city />\n" +
                 "    <postalCode>45405405</postalCode>\n" +
                 "    <country>UK</country>\n" +
+                "    <amTelephone>9746994550</amTelephone>\n" +
+                "    <handlingChargeOverridden>N</handlingChargeOverridden>\n" +
+                "    <handlingCharge>5</handlingCharge>\n" +
+                "    <discountOverridden>N</discountOverridden>\n" +
+                "    <orderLevelDiscountPercent>0</orderLevelDiscountPercent>\n" +
+                "    <receivedDate>20240301</receivedDate>\n" +
+                "    <emailAddress>SSRINIVASAN@ISLANDPACIFIC.COM</emailAddress>\n" +
                 "    <Lines>\n" +
                 "      <Line>\n" +
                 "        <lineSequence>001</lineSequence>\n" +
                 "        <skuNumber>836</skuNumber>\n" +
                 "        <quantityInUnits>1</quantityInUnits>\n" +
                 "        <unitPrice>10.00</unitPrice>\n" +
+                "        <priceIncludesVatYN>N</priceIncludesVatYN>\n" +
+                "        <taxAmount>.00</taxAmount>\n" +
+                "        <giftYN>N</giftYN>\n" +
+                "        <deliveryMethodCode>STD</deliveryMethodCode>\n" +
+                "        <shipToFirstName>SUJIT</shipToFirstName>\n" +
+                "        <shipToLastName>SRINIVASAN</shipToLastName>\n" +
+                "        <shipToAddressLine1>STREET 1 STREET 2</shipToAddressLine1>\n" +
+                "        <shipToAddressLine2></shipToAddressLine2>\n" +
+                "        <city>CHENNAI</city>\n" +
+                "        <state>TN</state>\n" +
+                "        <postalCode>1231</postalCode>\n" +
+                "        <country>GB</country>\n" +
+                "        <amTelephone>9629623424</amTelephone>\n" +
+                "        <customerDiscountPercent>0</customerDiscountPercent>\n" +
+                "        <customerEMailAddress>ssrinivasan@islandpacific.com</customerEMailAddress>\n" +
+                "        <Discounts>\n" +
+                "          <Discount>\n" +
+                "            <dealNumber>00101</dealNumber>\n" +
+                "            <discountAmount>0.00</discountAmount>\n" +
+                "            <couponNumber>0000004646</couponNumber>\n" +
+                "          </Discount>\n" +
+                "        </Discounts>\n" +
+                "      </Line>\n" +
+                "      <Line>\n" +
+                "        <lineSequence>002</lineSequence>\n" +
+                "        <skuNumber>828</skuNumber>\n" +
+                "        <quantityInUnits>1</quantityInUnits>\n" +
+                "        <unitPrice>10.00</unitPrice>\n" +
+                "        <priceIncludesVatYN>N</priceIncludesVatYN>\n" +
+                "        <taxAmount>.00</taxAmount>\n" +
+                "        <giftYN>N</giftYN>\n" +
+                "        <deliveryMethodCode>NXTDY</deliveryMethodCode>\n" +
+                "        <shipToFirstName>SUJIT</shipToFirstName>\n" +
+                "        <shipToLastName>SRINIVASAN</shipToLastName>\n" +
+                "        <shipToAddressLine1>STREET 1 STREET 2</shipToAddressLine1>\n" +
+                "        <shipToAddressLine2></shipToAddressLine2>\n" +
+                "        <city>CHENNAI</city>\n" +
+                "        <state>TN</state>\n" +
+                "        <postalCode>1231</postalCode>\n" +
+                "        <country>GB</country>\n" +
+                "        <amTelephone>9629623424</amTelephone>\n" +
+                "        <customerDiscountPercent>0</customerDiscountPercent>\n" +
+                "        <customerEMailAddress>ssrinivasan@islandpacific.com</customerEMailAddress>\n" +
+                "        <Discounts>\n" +
+                "          <Discount>\n" +
+                "            <dealNumber>00101</dealNumber>\n" +
+                "            <discountAmount>0.00</discountAmount>\n" +
+                "            <couponNumber>0000004646</couponNumber>\n" +
+                "          </Discount>\n" +
+                "        </Discounts>\n" +
                 "      </Line>\n" +
                 "    </Lines>\n" +
+                "    <Payments>\n" +
+                "      <Payment>\n" +
+                "        <paymentSequenceNumber>1</paymentSequenceNumber>\n" +
+                "        <paymentTypeCode>CA</paymentTypeCode>\n" +
+                "        <reference>CA</reference>\n" +
+                "        <paymentAmount>250.00</paymentAmount>\n" +
+                "      </Payment>\n" +
+                "    </Payments>\n" +
+                "    <Messages />\n" +
                 "  </Order>\n" +
                 "</Orders>";
     }
